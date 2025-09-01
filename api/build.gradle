@@ -4,6 +4,8 @@ android {
     compileSdkVersion 36
     buildToolsVersion '27.0.3'
 
+    namespace "com.tobeitech.api"
+
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 36
@@ -13,6 +15,11 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
+
+    buildFeatures {
+        buildConfig true
+    }
+
     buildTypes {
         release {
             minifyEnabled false

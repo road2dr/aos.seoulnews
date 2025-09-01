@@ -2,16 +2,32 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 36
     buildToolsVersion '27.0.3'
+
+    namespace "com.tobeitech.seouledunews"
+
     defaultConfig {
         applicationId "com.tobeitech.seouledunews"
         minSdkVersion 15
-        targetSdkVersion 33
-        versionCode 22   // junseo 2023.05.22
-        versionName "4.6"   // junseo 2023.05.22
+        targetSdkVersion 36
+//        versionCode 22   // junseo 2023.05.22
+//        versionName "4.6"   // junseo 2023.05.22
+        versionCode 23
+        versionName "4.7"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
     buildTypes {
         release {
             minifyEnabled false

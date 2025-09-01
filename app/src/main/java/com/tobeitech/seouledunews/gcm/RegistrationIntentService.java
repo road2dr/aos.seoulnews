@@ -34,8 +34,8 @@ public class RegistrationIntentService extends IntentService {
             // [START get_token]
             //app폴더 밑에 저장한 google-services.json 파일에 있는 클라이언트 키값으로 토큰을 만든다.
             InstanceID instanceID = InstanceID.getInstance(this);
-            String token = instanceID.getToken(getString(R.string.gcm_defaultSenderId),
-                    GoogleCloudMessaging.INSTANCE_ID_SCOPE, null);
+            String token = instanceID.getToken(GoogleCloudMessaging.INSTANCE_ID_SCOPE, null);
+
             // [END get_token]
 
             Dlog.d("instanceIdToken:" + token);

@@ -136,7 +136,6 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setBuiltInZoomControls(false);           //zoom
         webSettings.setDisplayZoomControls(false);          //돋보기
 
-        // todo junseo
         if (VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
             WebView.setWebContentsDebuggingEnabled(true);
         }
@@ -155,6 +154,8 @@ public class MainActivity extends AppCompatActivity {
         webViewMain.setOnTouchListener(new OnSwipeTouchListener(MainActivity.this) {
             public void onSwipeRight() {
                 String webUrl = webViewMain.getOriginalUrl();
+                if (webUrl == null)
+                    return;
 
                 if (webUrl.indexOf("/scrap_view") > 0 || webUrl.indexOf("/notice_view") > 0)
                     webViewMain.loadUrl("javascript:previousItem()");
@@ -162,6 +163,8 @@ public class MainActivity extends AppCompatActivity {
 
             public void onSwipeLeft() {
                 String webUrl = webViewMain.getOriginalUrl();
+                if (webUrl == null)
+                    return;
 
                 if (webUrl.indexOf("/scrap_view") > 0 || webUrl.indexOf("/notice_view") > 0)
                     webViewMain.loadUrl("javascript:nextItem()");
