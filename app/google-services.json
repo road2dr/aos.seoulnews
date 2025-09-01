@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "742295104930",
+    "project_id": "seouledunews"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742295104930:android:7498993b8b2cc3fe",
+        "android_client_info": {
+          "package_name": "com.tobeitech.seouledunews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742295104930-hdrqot0qk4gc10gnd9c3q05929hga1ao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqqHKdKC-MBEYQBNyp0JI2eLb7kZAdyvk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

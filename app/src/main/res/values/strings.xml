@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">서울교육뉴스</string>
+    <string name="warn_exit_alert_msg">종료 하시겠습니까?</string>
+    <string name="warn_exit_alert_title"></string>
+    <string name="warn_exit_alert_yes">예</string>
+    <string name="warn_exit_alert_no">아니오</string>
+
+</resources>
